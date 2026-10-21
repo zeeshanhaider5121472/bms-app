@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+/* 1. Explicitly enforce your Light Theme configuration variables across ALL modes 
+      to block Next.js 404 pages from hijacking your background styles */
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 236, 239, 248;
+  --background-end-rgb: 236, 239, 248;
+}
+
+/* Force dark color schemes to reuse your exact light theme tokens */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 236, 239, 248;
+    --background-end-rgb: 236, 239, 248;
+  }
+}
+
+/* Apply your custom gradient natively to both html and body targets 
+   to override Next.js internal document styling scripts */
+html,
+body {
+  color: rgb(var(--foreground-rgb)) !important;
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb)) !important; /* !important guarantees consistency when moving back from 404 screens */
+}
+
+/* hide the scrollbar but keep scrolling (mobile menu) */
+.no-scrollbar {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* small fade-in when the right screen swaps */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.25s ease-out;
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}

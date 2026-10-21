@@ -1,0 +1,90 @@
+{
+  "Allprocesses": {
+    "DrBeen Video Process": {
+      "processname": "DrBeen Video Process",
+      "template1": {
+        "templatename": "Semaglutide",
+        "step1": {
+          "stepname": "Choose a Topic Name for the video",
+          "processref": "DrBeen Video Process\\Semaglutide",
+          "assignees": {
+            "assignee1": "Zeeshan Haider",
+            "assignee2": "Johar abbas"
+          },
+          "lastupdated": "2024-06-10",
+          "status": "In Progress",
+          "comment": "Please upload the video"
+        },
+        "step2": {
+          "stepname": "Choose a Category for the video",
+          "processref": "DrBeen Video Process\\Semaglutide",
+          "assignees": {
+            "assignee1": "Zeeshan Haider",
+            "assignee2": "Johar abbas"
+          },
+          "lastupdated": "2024-06-10",
+          "status": "In Progress",
+          "comment": "Please upload the video"
+        }
+      },
+      "template2": {
+        "templatename": "Red Blood Cells",
+        "step1": {
+          "stepname": "Choose a Topic Name for the video",
+          "processref": "DrBeen Video Process\\Semaglutide",
+          "assignees": {
+            "assignee1": "Zeeshan Haider",
+            "assignee2": "Johar abbas"
+          },
+          "lastupdated": "2024-06-10",
+          "status": "In Progress",
+          "comment": "Please upload the video"
+        }
+      }
+    },
+    "DrBeen Video Process2": {
+      "processname": "DrBeen Video Process2",
+      "template1": {
+        "templatename": "Semaglutide",
+        "step1": {
+          "stepname": "Choose a Topic Name for the video",
+          "processref": "DrBeen Video Process\\Semaglutide",
+          "assignees": {
+            "assignee1": "Zeeshan Haider",
+            "assignee2": "Johar abbas"
+          },
+          "lastupdated": "2024-06-10",
+          "status": "In Progress",
+          "comment": "Please upload the video"
+        },
+        "step2": {
+          "stepname": "Choose a Category for the video",
+          "processref": "DrBeen Video Process\\Semaglutide",
+          "assignees": {
+            "assignee1": "Zeeshan Haider",
+            "assignee2": "Johar abbas"
+          },
+          "lastupdated": "2024-06-10",
+          "status": "In Progress",
+          "comment": "Please upload the video"
+        }
+      }
+    }
+  },
+  "Admins": {
+    "Admin1": {
+      "adminname": "Admin1",
+      "role": "Super Admin",
+      "lastlogin": "2024-06-10",
+      "status": "Active"
+    }
+  },
+  "Users": {
+    "User1": {
+      "username": "User1",
+      "role": "Editor",
+      "lastlogin": "2024-06-10",
+      "status": "Active"
+    }
+  }
+}
