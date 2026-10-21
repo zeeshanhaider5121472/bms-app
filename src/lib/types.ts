@@ -1,23 +1,32 @@
 export type Step = {
+  stepid: string;
   stepname: string;
   processref: string;
-  assignees: Record<string, string>;
+  [key: string]: any | Assignee;
   lastupdated: string;
+  duedate: string;
   status: string;
   comment: string;
 };
+export type Assignee = {
+  name: string;
+  role: string;
+};
 
 export type Template = {
+  templateid: string;
   templatename: string;
   [key: string]: any | Step;
 };
 
 export type ProcessItem = {
+  processid: string;
   processname: string;
   [key: string]: any | Template;
 };
 
 export type AdminItem = {
+  adminid: string;
   adminname: string;
   role: string;
   lastlogin: string;
@@ -25,6 +34,7 @@ export type AdminItem = {
 };
 
 export type UserItem = {
+  userid: string;
   username: string;
   role: string;
   lastlogin: string;

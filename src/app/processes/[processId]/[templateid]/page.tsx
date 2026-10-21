@@ -81,6 +81,14 @@ export default async function TemplatePage({
   // Extract all steps inside this specific template
   const steps = Object.entries(template).filter(([k]) => k.startsWith("step"));
 
+  // const users = [
+  //   { id: 1, name: "Alice Smith", email: "alice@example.com" },
+  //   { id: 2, name: "Bob Jones", email: "bob@example.com" },
+  //   { id: 3, name: "Charlie Brown", email: "charlie@example.com" },
+  //   { id: 4, name: "Diana Prince", email: "diana@example.com" },
+  //   { id: 5, name: "Evan Wright", email: "evan@example.com" },
+  // ];
+
   return (
     // <div className="p-8 max-w-4xl mx-auto space-y-6">
     <div className="bg-white overflow-x-auto flex flex-col w-full min-h-full rounded-2xl p-6 pt-8">
@@ -113,6 +121,85 @@ export default async function TemplatePage({
         <p className="text-xs text-slate-400 uppercase tracking-wider mt-1">
           Parent Process: {process.processname || processId}
         </p>
+      </div>
+
+      {/* table Section */}
+      <div className="overflow-x-auto p-6">
+        <table className="min-w-full bg-white border border-gray-200 shadow-sm rounded-lg">
+          <thead className="bg-gray-50 border-b border-gray-200">
+            <tr>
+              <th className="px-6 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                Name
+              </th>
+              <th className="px-6 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                Process
+              </th>
+              <th className="px-6 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                Assignees
+              </th>
+              <th className="px-6 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                Activity
+              </th>
+              <th className="px-6 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                Status
+              </th>
+              <th className="px-6 py-3 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                Due
+              </th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-gray-200">
+            {steps.map(([sKey, sVal]: [string, any]) => (
+              <tr key={sKey} className="hover:bg-gray-50 transition-colors">
+                <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                  {sVal.stepname}
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  {sVal.processref}
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  <div className="flex items-center p-1 -space-x-2 overflow-hidden">
+                    {Object.values(sVal.assignees).map(
+                      (assignee: any, index: number) => {
+                        const initial = assignee.name
+                          ? assignee.name.charAt(0).toUpperCase()
+                          : "?";
+                        const tooltipText = `${assignee.name} (${assignee.role})`;
+
+                        return (
+                          <div
+                            key={index}
+                            title={tooltipText}
+                            className="relative inline-flex items-center justify-center w-8 h-8 rounded-full bg-slate-700 text-white text-xs font-semibold ring-2 ring-white cursor-pointer hover:z-10 transition-transform hover:scale-110"
+                          >
+                            {initial}
+                          </div>
+                        );
+                      },
+                    )}
+                  </div>
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  {sVal.lastupdated}
+                </td>
+                <td className="px-6 py-4">
+                  <span
+                    className={`inline-block text-[10px] px-2.5 py-1 rounded-full font-semibold ${
+                      sVal.status === "In Progress"
+                        ? "bg-amber-100 text-amber-800"
+                        : "bg-emerald-100 text-emerald-800"
+                    }`}
+                  >
+                    {sVal.status}
+                  </span>
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  {sVal.duedate}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
 
       {/* Steps Section */}

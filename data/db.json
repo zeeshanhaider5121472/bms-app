@@ -2,26 +2,44 @@
   "Allprocesses": {
     "DrBeen Video Process": {
       "processname": "DrBeen Video Process",
+      "processid": "10015151455",
       "template1": {
+        "templateid": "100151514sjfs5",
         "templatename": "Semaglutide",
         "step1": {
+          "stepid": "1001fs51514sj5",
           "stepname": "Choose a Topic Name for the video",
           "processref": "DrBeen Video Process\\Semaglutide",
           "assignees": {
-            "assignee1": "Zeeshan Haider",
-            "assignee2": "Johar abbas"
+            "assignee1": {
+              "name": "Zeeshan Haider",
+              "role": "Editor"
+            },
+            "assignee2": {
+              "name": "Johar abbas",
+              "role": "Developer"
+            }
           },
           "lastupdated": "2024-06-10",
+          "duedate": "2024-06-10",
           "status": "In Progress",
           "comment": "Please upload the video"
         },
         "step2": {
+          "stepid": "100134s51514sj5",
           "stepname": "Choose a Category for the video",
           "processref": "DrBeen Video Process\\Semaglutide",
           "assignees": {
-            "assignee1": "Zeeshan Haider",
-            "assignee2": "Johar abbas"
+            "assignee1": {
+              "name": "Zeeshan Haider",
+              "role": "Editor"
+            },
+            "assignee2": {
+              "name": "Johar abbas",
+              "role": "Developer"
+            }
           },
+          "duedate": "2024-06-10",
           "lastupdated": "2024-06-10",
           "status": "In Progress",
           "comment": "Please upload the video"
@@ -29,13 +47,22 @@
       },
       "template2": {
         "templatename": "Red Blood Cells",
+        "templateid": "1001fs51514s34wj5",
         "step1": {
+          "stepid": "1001fs51514sj5s53",
           "stepname": "Choose a Topic Name for the video",
           "processref": "DrBeen Video Process\\Semaglutide",
           "assignees": {
-            "assignee1": "Zeeshan Haider",
-            "assignee2": "Johar abbas"
+            "assignee1": {
+              "name": "Zeeshan Haider",
+              "role": "Editor"
+            },
+            "assignee2": {
+              "name": "Johar abbas",
+              "role": "Developer"
+            }
           },
+          "duedate": "2024-06-10",
           "lastupdated": "2024-06-10",
           "status": "In Progress",
           "comment": "Please upload the video"
@@ -43,27 +70,45 @@
       }
     },
     "DrBeen Video Process2": {
+      "processid": "100151518925",
       "processname": "DrBeen Video Process2",
       "template1": {
+        "templateid": "100151554451455",
         "templatename": "Semaglutide",
         "step1": {
+          "stepid": "1001577hh151455",
           "stepname": "Choose a Topic Name for the video",
           "processref": "DrBeen Video Process\\Semaglutide",
           "assignees": {
-            "assignee1": "Zeeshan Haider",
-            "assignee2": "Johar abbas"
+            "assignee1": {
+              "name": "Zeeshan Haider",
+              "role": "Editor"
+            },
+            "assignee2": {
+              "name": "Johar abbas",
+              "role": "Developer"
+            }
           },
+          "duedate": "2024-06-10",
           "lastupdated": "2024-06-10",
           "status": "In Progress",
           "comment": "Please upload the video"
         },
         "step2": {
+          "stepid": "1066dd577hh151455",
           "stepname": "Choose a Category for the video",
           "processref": "DrBeen Video Process\\Semaglutide",
           "assignees": {
-            "assignee1": "Zeeshan Haider",
-            "assignee2": "Johar abbas"
+            "assignee1": {
+              "name": "Zeeshan Haider",
+              "role": "Editor"
+            },
+            "assignee2": {
+              "name": "Johar abbas",
+              "role": "Developer"
+            }
           },
+          "duedate": "2024-06-10",
           "lastupdated": "2024-06-10",
           "status": "In Progress",
           "comment": "Please upload the video"
@@ -73,6 +118,7 @@
   },
   "Admins": {
     "Admin1": {
+      "adminid": "10015178781gvb51455",
       "adminname": "Admin1",
       "role": "Super Admin",
       "lastlogin": "2024-06-10",
@@ -81,6 +127,7 @@
   },
   "Users": {
     "User1": {
+      "userid": "100151787846124d1gvb51455",
       "username": "User1",
       "role": "Editor",
       "lastlogin": "2024-06-10",
