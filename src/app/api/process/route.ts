@@ -1,20 +1,27 @@
-// app/api/process/route.ts
-import { addProcess, dataBase } from "@/src/lib/db";
+import { dataBase, saveTemplateToProcess } from "@/src/lib/db";
 import { NextResponse } from "next/server";
 
 export async function POST(request: Request) {
   try {
-    const { processName, processId, processMembers } = await request.json();
+    const body = await request.json();
+    const { processName, templateName, templateId, steps } = body;
 
-    // Call your server-side function
-    addProcess(processName, processId, processMembers || []);
+    if (!processName || !templateName) {
+      return NextResponse.json(
+        { success: false, error: "Missing processName or templateName" },
+        { status: 400 },
+      );
+    }
 
-    // Return updated db or success flag
+    // Pass templateId so it knows whether to update or create
+    saveTemplateToProcess(processName, templateName, steps || [], templateId);
+
     const updatedDb = dataBase();
     return NextResponse.json({ success: true, db: updatedDb });
   } catch (error) {
+    console.error("Failed to save template:", error);
     return NextResponse.json(
-      { success: false, error: "Failed to add process" },
+      { success: false, error: "Failed to save template to db.json" },
       { status: 500 },
     );
   }

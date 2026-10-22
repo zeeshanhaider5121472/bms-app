@@ -221,6 +221,7 @@ export default function Sidebar({ db }: { db: Database }) {
                     const templates = Object.entries(processVal).filter(([k]) =>
                       k.startsWith("template"),
                     );
+                    // console.log("Extracted templates:", processVal, processKey);
 
                     const processUrl = `/processes/${processKey}`;
                     const isProcessActive = currentPath === processUrl;
@@ -245,7 +246,7 @@ export default function Sidebar({ db }: { db: Database }) {
                             </span>
                           </Link>
                           <Link
-                            href="/processes/newprocess"
+                            href={`/processes/newprocess/newtemplate?processId=${encodeURIComponent(processKey)}`}
                             className="text-slate-500 hover:text-slate-900 font-bold px-1.5 py-0.5 rounded text-sm transition-colors"
                           >
                             +

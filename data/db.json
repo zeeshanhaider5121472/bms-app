@@ -15,11 +15,12 @@
       },
       "template1": {
         "templateid": "100151514sjfs5",
-        "templatename": "Semaglutide",
+        "templatename": "Semaglutidee",
         "step1": {
           "stepid": "1001fs51514sj5",
           "stepname": "Choose a Topic Name for the video",
-          "processref": "DrBeen Video Process\\Semaglutide",
+          "processref": "DrBeen Video Process1\\Semaglutidee",
+          "required": true,
           "assignees": {
             "assignee1": {
               "name": "Zeeshan Haider",
@@ -30,15 +31,17 @@
               "role": "Developer"
             }
           },
-          "lastupdated": "2024-06-10",
+          "lastupdated": "2026-10-22",
           "duedate": "2024-06-10",
           "status": "In Progress",
-          "comment": "Please upload the video"
+          "comment": "Please upload the video",
+          "items": {}
         },
         "step2": {
           "stepid": "100134s51514sj5",
           "stepname": "Choose a Category for the video",
-          "processref": "DrBeen Video Process\\Semaglutide",
+          "processref": "DrBeen Video Process1\\Semaglutidee",
+          "required": true,
           "assignees": {
             "assignee1": {
               "name": "Zeeshan Haider",
@@ -49,10 +52,11 @@
               "role": "Developer"
             }
           },
+          "lastupdated": "2026-10-22",
           "duedate": "2024-06-10",
-          "lastupdated": "2024-06-10",
           "status": "In Progress",
-          "comment": "Please upload the video"
+          "comment": "Please upload the video",
+          "items": {}
         }
       },
       "template2": {
@@ -147,15 +151,134 @@
           "name": "User2",
           "role": "developer"
         }
-      }
-    },
-    "hkahfka": {
-      "processid": "p_1792673998701",
-      "processname": "hkahfka",
-      "processmembers": {
-        "member1": {
-          "name": "User1",
-          "role": "Editor"
+      },
+      "template1": {
+        "templateid": "t_1792692085971",
+        "templatename": "abcd2",
+        "step1": {
+          "stepid": "step_1792692067108_hb2y",
+          "stepname": "Choose a Topic Name",
+          "processref": "DrBeen Video Process3\\abcd2",
+          "required": true,
+          "assignees": {
+            "assignee1": {
+              "name": "Zeeshan Haider",
+              "role": "Editor"
+            }
+          },
+          "lastupdated": "2026-10-22",
+          "duedate": "2026-10-22",
+          "status": "In Review",
+          "comment": "",
+          "items": {
+            "item1": {
+              "itemid": "item_1792692067108_ez10",
+              "type": "single-line",
+              "label": "Topic Name",
+              "placeholder": "Text will be typed here...",
+              "userValue": "ceodd"
+            }
+          }
+        },
+        "step2": {
+          "stepid": "step_1792692069354_y0fy",
+          "stepname": "Choose a Script Details",
+          "processref": "DrBeen Video Process3\\abcd2",
+          "required": true,
+          "assignees": {
+            "assignee1": {
+              "name": "Zeeshan Haider",
+              "role": "Editor"
+            },
+            "assignee2": {
+              "name": "Johar abbas",
+              "role": "Developer"
+            }
+          },
+          "lastupdated": "2026-10-22",
+          "duedate": "2026-10-22",
+          "status": "In Progress",
+          "comment": "",
+          "items": {
+            "item1": {
+              "itemid": "item_1792692069354_ae0m",
+              "type": "multi-line",
+              "label": "Script Details",
+              "placeholder": "Text will be typed here...",
+              "userValue": "deoddd"
+            },
+            "item2": {
+              "itemid": "item_1792692142260_3m2j",
+              "type": "radio",
+              "label": "Categories",
+              "placeholder": "Text will be typed here...",
+              "options": [
+                "Education",
+                "Information",
+                "Entertainment",
+                "Option 4dd"
+              ],
+              "userValue": ""
+            }
+          }
+        }
+      },
+      "template2": {
+        "templateid": "t_1792693382217",
+        "templatename": "abddd",
+        "step1": {
+          "stepid": "step_1792693391878_v1vt",
+          "stepname": "Choose a Topic Name",
+          "processref": "DrBeen Video Process3\\abddd",
+          "required": false,
+          "assignees": {
+            "assignee1": {
+              "name": "Zeeshan Haider",
+              "role": "Editor"
+            }
+          },
+          "lastupdated": "2026-10-22",
+          "duedate": "2026-10-22",
+          "status": "In Progress",
+          "comment": "",
+          "items": {
+            "item1": {
+              "itemid": "item_1792693391878_mflx",
+              "type": "single-line",
+              "label": "Topic Name",
+              "placeholder": "Text will be typed here...",
+              "userValue": "ee"
+            }
+          }
+        }
+      },
+      "template3": {
+        "templateid": "t_1792697889653",
+        "templatename": "new",
+        "step1": {
+          "stepid": "step_1792697882996_oir0",
+          "stepname": "Choose a Topic Namess",
+          "processref": "DrBeen Video Process3\\new",
+          "required": true,
+          "assignees": {
+            "assignee1": {
+              "name": "Zeeshan Haider",
+              "role": "Editor"
+            }
+          },
+          "lastupdated": "2026-10-22",
+          "duedate": "2026-10-22",
+          "status": "In Progress",
+          "comment": "",
+          "items": {
+            "item1": {
+              "itemid": "item_1792697882996_p2bg",
+              "type": "single-line",
+              "label": "Topic Name",
+              "placeholder": "Text will be typed here...",
+              "userValue": "sdssdd"
+            }
+          }
         }
       }
     }

@@ -1,16 +1,23 @@
+export type StepItem = {
+  itemid: string;
+  type: string;
+  label: string;
+  placeholder?: string;
+  options?: string[];
+  userValue?: any;
+};
+
 export type Step = {
   stepid: string;
   stepname: string;
   processref: string;
-  [key: string]: any | Assignee;
-  lastupdated: string;
+  required: boolean;
+  owner: string;
   duedate: string;
   status: string;
   comment: string;
-};
-export type Assignee = {
-  name: string;
-  role: string;
+  items?: Record<string, StepItem>;
+  [key: string]: any;
 };
 
 export type Template = {
@@ -22,16 +29,8 @@ export type Template = {
 export type ProcessItem = {
   processid: string;
   processname: string;
-  [key: string]: any | Processmembers | Template;
-};
-
-export type Processmembers = {
-  [key: string]: any | Member;
-};
-
-export type Member = {
-  name: string;
-  role: string;
+  processmembers: Record<string, { name: string; role: string }>;
+  [key: string]: any;
 };
 
 export type AdminItem = {
@@ -50,7 +49,6 @@ export type UserItem = {
   status: string;
 };
 
-// Your new root Database type
 export type Database = {
   Allprocesses: Record<string, ProcessItem>;
   Admins: Record<string, AdminItem>;
