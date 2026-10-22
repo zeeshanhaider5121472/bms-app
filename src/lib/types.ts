@@ -22,7 +22,16 @@ export type Template = {
 export type ProcessItem = {
   processid: string;
   processname: string;
-  [key: string]: any | Template;
+  [key: string]: any | Processmembers | Template;
+};
+
+export type Processmembers = {
+  [key: string]: any | Member;
+};
+
+export type Member = {
+  name: string;
+  role: string;
 };
 
 export type AdminItem = {

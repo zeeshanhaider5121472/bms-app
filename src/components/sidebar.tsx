@@ -177,7 +177,7 @@ export default function Sidebar({ db }: { db: Database }) {
                   <span>Home</span>
                 </Link>
 
-                <Link
+                {/* <Link
                   href="/tasks"
                   onClick={() => setCurrentPath("/tasks")}
                   className={`flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
@@ -188,7 +188,7 @@ export default function Sidebar({ db }: { db: Database }) {
                 >
                   <FiCheckSquare className="text-lg text-slate-700" />
                   <span>My Tasks</span>
-                </Link>
+                </Link> */}
               </div>
 
               {/* SECTION 2: Main Workspace & Filter Panels */}
@@ -245,7 +245,7 @@ export default function Sidebar({ db }: { db: Database }) {
                             </span>
                           </Link>
                           <Link
-                            href="/new"
+                            href="/processes/newprocess"
                             className="text-slate-500 hover:text-slate-900 font-bold px-1.5 py-0.5 rounded text-sm transition-colors"
                           >
                             +

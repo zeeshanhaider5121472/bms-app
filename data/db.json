@@ -1,8 +1,18 @@
 {
   "Allprocesses": {
-    "DrBeen Video Process": {
-      "processname": "DrBeen Video Process",
+    "DrBeen Video Process1": {
+      "processname": "DrBeen Video Process1",
       "processid": "10015151455",
+      "processmembers": {
+        "member1": {
+          "name": "Zeeshan Haider",
+          "role": "Editor"
+        },
+        "member2": {
+          "name": "Johar abbas",
+          "role": "Developer"
+        }
+      },
       "template1": {
         "templateid": "100151514sjfs5",
         "templatename": "Semaglutide",
@@ -72,6 +82,16 @@
     "DrBeen Video Process2": {
       "processid": "100151518925",
       "processname": "DrBeen Video Process2",
+      "processmembers": {
+        "member1": {
+          "name": "Zeeshan Haider",
+          "role": "Editor"
+        },
+        "member2": {
+          "name": "Johar abbas",
+          "role": "Developer"
+        }
+      },
       "template1": {
         "templateid": "100151554451455",
         "templatename": "Semaglutide",
@@ -114,6 +134,30 @@
           "comment": "Please upload the video"
         }
       }
+    },
+    "DrBeen Video Process3": {
+      "processid": "p_1792665127417",
+      "processname": "DrBeen Video Process3",
+      "processmembers": {
+        "member1": {
+          "name": "User1",
+          "role": "Editor"
+        },
+        "member2": {
+          "name": "User2",
+          "role": "developer"
+        }
+      }
+    },
+    "hkahfka": {
+      "processid": "p_1792673998701",
+      "processname": "hkahfka",
+      "processmembers": {
+        "member1": {
+          "name": "User1",
+          "role": "Editor"
+        }
+      }
     }
   },
   "Admins": {
@@ -130,6 +174,13 @@
       "userid": "100151787846124d1gvb51455",
       "username": "User1",
       "role": "Editor",
+      "lastlogin": "2024-06-10",
+      "status": "Active"
+    },
+    "User2": {
+      "userid": "10015dcd1787846124d1gvb51455",
+      "username": "User2",
+      "role": "developer",
       "lastlogin": "2024-06-10",
       "status": "Active"
     }
